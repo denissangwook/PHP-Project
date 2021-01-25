@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* HTML RESET */
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+  background: rgba(236, 236, 236, 0.5);
+  color: rgb(43,55,96);
+}
+
+.wrapper {
+	max-width: 100%;
+	margin: 0 auto;
+  width: 1200px;
+  padding: 20px 10px;
+}
+
+.wrapper .output-message-container {
+  background-color:  rgba(224,184,30,.9);
+  color: #fff;
+  font-size: 1.5em;
+  width: 90%;
+  padding: 2px 5px;
+}
+
+h1 {
+  font-family: 'David Libre', serif;
+  border-bottom: 2px solid rgb(43,55,96);
+}
+
+h2 {
+  font-family: 'David Libre', serif;
+  border-bottom: 1px solid rgb(43,55,96);
+  width: 20%;
+}
+
+.students {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead, tbody {
+  width:100vh;
+}
+
+.students th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(43,55,96);
+}
+.students th a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.students th .fa-sort-asc {
+  font-size: 1em;
+  margin-left:10px;
+  color: #fff;
+  vertical-align: middle;
+}  
+
+.students th:hover {
+  background-color: rgba(224,184,30,.9);
+  color: #fff;
+}
+
+.students th a:hover,
+.students th .fa-sort-asc:hover {
+  color:rgb(43,55,96);
+}
+
+.students td, .students th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.students tr:nth-child(even){
+  background-color: rgba(43,55,96,.1);
+}
+
+.students tr:hover td:not(:nth-of-type(n+4)) {
+  background-color: rgba(43,55,96,.5);
+}
+
+.btn {
+  background-color: rgba(224,184,30,.9);
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  font-size: 1em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 20px 12px;
+  display: block;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: rgba(255, 227, 115, 0.9);
+  color: black;
+  cursor: pointer;
+}
+
+.add-container {
+  float: right;
+  padding-right: 10px;
+}
+
+.btn-add {
+  background-color: rgba(224,184,30,.9);
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 20px 12px;
+  display: block;
+  text-align: center;
+  width: 240px;
+  margin-bottom: 20px;
+}
+
+.btn-add:hover {
+  background-color: rgba(255, 227, 115, 0.9);
+  color: black;
+  cursor: pointer;
+}
+
+input[type=text] {
+  margin-bottom: 5px;
+}
+
+input[type=text]:focus {
+  background-color: rgba(255, 227, 115, 0.9);
+  padding-left: 3px;
+}
+
+input[type=submit] {
+  margin-top: 10px;
+  background-color: rgb(43,55,96);
+  color: #fff;
+  padding:5px
+}
+
+input[type=submit]:hover {
+  background-color:rgba(255, 227, 115, 0.9);
+  color:  rgb(43,55,96);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgb(43,55,96);
+  padding:5px
+}
+
+.special-text {
+  color: rgb(14, 36, 116);
+  font-weight: 600;
+}
+
+footer {
+  background-color: rgb(43,55,96);
+}
+
+footer p {
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px 0;
+}
